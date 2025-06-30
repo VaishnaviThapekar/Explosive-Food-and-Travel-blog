@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explosive Food & Travel - Exploding Flavors. Epic Journeys.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2 class="brand-logo">Explosive Food & Travel</h2>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#food" class="nav__link">Food</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#travel" class="nav__link">Travel</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#videos" class="nav__link">Videos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#subscribe" class="nav__link">Subscribe</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Exploding Flavors. Epic Journeys.</h1>
+                    <p class="hero__subtitle">Where every bite is a blast and every trip is a thrill</p>
+                    <button class="btn btn--primary hero__btn" onclick="scrollToSection('subscribe')">
+                        Subscribe Now
+                    </button>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__food-emoji">🍜</div>
+                    <div class="hero__travel-emoji">✈️</div>
+                    <div class="hero__explosion-emoji">💥</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Adventures Section -->
+        <section class="adventures" id="travel">
+            <div class="container">
+                <h2 class="section__title">Latest Adventures</h2>
+                <div class="adventures__grid">
+                    <div class="adventure-card fade-in">
+                        <div class="adventure-card__image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="Bangkok Street Food" loading="lazy">
+                            <div class="adventure-card__overlay">
+                                <span class="adventure-card__location">Thailand</span>
+                            </div>
+                        </div>
+                        <div class="adventure-card__content">
+                            <h3 class="adventure-card__title">Top 5 Street Foods in Bangkok</h3>
+                            <p class="adventure-card__description">Explore sizzling flavors and unforgettable bites</p>
+                            <div class="adventure-card__foods">
+                                <span class="food-tag">Pad Thai</span>
+                                <span class="food-tag">Som Tam</span>
+                                <span class="food-tag">Mango Sticky Rice</span>
+                                <span class="food-tag">Thai Fish Cakes</span>
+                                <span class="food-tag">Coconut Ice Cream</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adventure-card fade-in">
+                        <div class="adventure-card__image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400" alt="Mexico Volcano Trek" loading="lazy">
+                            <div class="adventure-card__overlay">
+                                <span class="adventure-card__location">Mexico</span>
+                            </div>
+                        </div>
+                        <div class="adventure-card__content">
+                            <h3 class="adventure-card__title">Volcano Trek and Tacos</h3>
+                            <p class="adventure-card__description">Climb fire and feast on fiery food</p>
+                            <div class="adventure-card__foods">
+                                <span class="food-tag">Street Tacos</span>
+                                <span class="food-tag">Elote</span>
+                                <span class="food-tag">Churros</span>
+                                <span class="food-tag">Quesadillas</span>
+                                <span class="food-tag">Tamales</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adventure-card fade-in">
+                        <div class="adventure-card__image">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400" alt="Indonesia Spice Trail" loading="lazy">
+                            <div class="adventure-card__overlay">
+                                <span class="adventure-card__location">Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="adventure-card__content">
+                            <h3 class="adventure-card__title">Spice Trail Through Lava Lands</h3>
+                            <p class="adventure-card__description">A journey through volcanic lands and spicy cuisines</p>
+                            <div class="adventure-card__foods">
+                                <span class="food-tag">Nasi Gudeg</span>
+                                <span class="food-tag">Rendang</span>
+                                <span class="food-tag">Sate</span>
+                                <span class="food-tag">Gado-gado</span>
+                                <span class="food-tag">Bakso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Dishes Section -->
+        <section class="famous-dishes" id="food">
+            <div class="container">
+                <h2 class="section__title">Famous Dishes Around the World</h2>
+                <div class="dishes__grid">
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇮🇹</div>
+                        <h3 class="dish-card__country">Italy</h3>
+                        <h4 class="dish-card__name">Arancini</h4>
+                        <p class="dish-card__description">Stuffed rice balls coated with breadcrumbs and deep fried</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇨🇳</div>
+                        <h3 class="dish-card__country">China</h3>
+                        <h4 class="dish-card__name">Bao Buns</h4>
+                        <p class="dish-card__description">Steamed lotus leaf bread folded around tender meat</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇮🇳</div>
+                        <h3 class="dish-card__country">India</h3>
+                        <h4 class="dish-card__name">Chaat</h4>
+                        <p class="dish-card__description">Savory snacks with tangy tamarind sauce</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇯🇵</div>
+                        <h3 class="dish-card__country">Japan</h3>
+                        <h4 class="dish-card__name">Takoyaki</h4>
+                        <p class="dish-card__description">Octopus balls with savory sauce</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇰🇷</div>
+                        <h3 class="dish-card__country">Korea</h3>
+                        <h4 class="dish-card__name">Korean BBQ</h4>
+                        <p class="dish-card__description">Grilled meat with kimchi and banchan</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇹🇭</div>
+                        <h3 class="dish-card__country">Thailand</h3>
+                        <h4 class="dish-card__name">Pad Thai</h4>
+                        <p class="dish-card__description">Stir-fried noodles with shrimp and vegetables</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇲🇽</div>
+                        <h3 class="dish-card__country">Mexico</h3>
+                        <h4 class="dish-card__name">Tacos</h4>
+                        <p class="dish-card__description">Soft tortillas filled with meat and fresh toppings</p>
+                    </div>
+                    
+                    <div class="dish-card fade-in">
+                        <div class="dish-card__flag">🇵🇪</div>
+                        <h3 class="dish-card__country">Peru</h3>
+                        <h4 class="dish-card__name">Ceviche</h4>
+                        <p class="dish-card__description">Raw fish cured in citrus juices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="subscribe">
+            <div class="container">
+                <div class="contact__content">
+                    <div class="contact__form-section">
+                        <h2 class="section__title section__title--white">Get In Touch</h2>
+                        <p class="contact__subtitle">Ready for your next food adventure? Contact us!</p>
+                        
+                        <form class="contact__form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone">
+                                <span class="form-error" id="phone-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                                <span class="form-error" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader hidden">Sending...</span>
+                            </button>
+                            
+                            <div class="form-success hidden" id="form-success">
+                                <i class="fas fa-check-circle"></i>
+                                Message sent successfully! We'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact__subscribe-section">
+                        <h3 class="subscribe__title">Subscribe to Our Instagram</h3>
+                        <p class="subscribe__subtitle">Join our food and travel community for daily inspiration!</p>
+                        
+                        <form class="subscribe__form" id="subscribe-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="subscribe-email" name="email" placeholder="Enter your email" required>
+                                <span class="form-error" id="subscribe-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full-width">
+                                Subscribe Now
+                            </button>
+                            
+                            <div class="form-success hidden" id="subscribe-success">
+                                <i class="fas fa-check-circle"></i>
+                                Subscribed successfully! Check your email for confirmation.
+                            </div>
+                        </form>
+                        
+                        <div class="social-links">
+                            <a href="https://instagram.com/explosivefoodtravel" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                Follow us on Instagram
+                            </a>
+                            <a href="https://facebook.com/explosivefoodtravel" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                Like us on Facebook
+                            </a>
+                            <a href="https://youtube.com/explosivefoodtravel" target="_blank" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                Subscribe on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Explosive Food & Travel. All rights reserved.</p>
+                <p>Follow us on <a href="https://instagram.com/explosivefoodtravel" target="_blank">Instagram</a> for daily food adventures!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
